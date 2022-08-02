@@ -27,6 +27,15 @@ struct ContentView: View {
         }
     }
     
+    // TODO: things ...
+    /**
+     * 1. hook up to cloudkit model
+     * 1.5. time updating and toggle working
+     * 2. check ios15 compliance
+     * 3. fix gesture animation
+     * 4. big refactor
+     */
+    
     var body: some View {
         VStack {
             
