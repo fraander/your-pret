@@ -18,7 +18,7 @@ class ViewModel: ObservableObject {
     
     init() {
         self.status = .p1
-        self.lastUpdate = Date()
+        self.lastUpdate = Date(timeIntervalSinceNow: -10000)
     }
     
     init(status: PretStatus, lastUpdate: Date) {
@@ -32,5 +32,7 @@ class ViewModel: ObservableObject {
         } else if status == .p2 {
             status = .p1
         }
+        
+        lastUpdate = Date()
     }
 }

@@ -40,11 +40,29 @@ struct PretSlider: View {
             .foregroundColor(vm.status == .p1 ? Color.white : Color.pretRed)
     }
     
+    var readyText: some View {
+        Group {
+            if Date().timeIntervalSince(vm.lastUpdate) > 30 * 60 {
+                return Text("It's Pret time!")
+            } else {
+                return Text("Not yet ready.")
+            }
+        }
+        .font(.system(size: 16, weight: .regular, design: .monospaced))
+        .foregroundColor(vm.status == .p1 ? Color.secondary : Color.white.opacity(0.8))
+    }
+    
     var body: some View {
         GeometryReader { geo in
             ZStack(alignment: vm.status == .p1 ? .top : .bottom) {
                 sliderBg
                     .shadow(color: Color.black.opacity(0.5), radius: 10, x: 0, y: 0)
+                    .overlay {
+                        readyText
+                            .padding(.vertical, 180)
+                            .frame(maxHeight: .infinity, alignment: vm.status == .p1 ? .bottom : .top)
+                            .animation(.none, value: vm.status)
+                    }
                 
                 Button {
                     withAnimation { vm.toggleStatus() }
