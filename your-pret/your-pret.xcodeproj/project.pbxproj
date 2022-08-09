@@ -13,6 +13,8 @@
 		BD00EE5028992082004F3769 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD00EE4F28992082004F3769 /* Preview Assets.xcassets */; };
 		BD6D87FE2899E07F00A1EBB5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6D87FD2899E07F00A1EBB5 /* CloudKit.framework */; };
 		BD6D88002899E0B400A1EBB5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6D87FF2899E0B400A1EBB5 /* ViewModel.swift */; };
+		BD91D76628A27378005CA344 /* Bg.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD91D76528A27378005CA344 /* Bg.swift */; };
+		BD91D76828A2740A005CA344 /* PretSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD91D76728A2740A005CA344 /* PretSlider.swift */; };
 		BDE8D79428A24D1800192BEB /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8D79328A24D1800192BEB /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		BD6D87FB2899DFFC00A1EBB5 /* your-pret.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "your-pret.entitlements"; sourceTree = "<group>"; };
 		BD6D87FD2899E07F00A1EBB5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		BD6D87FF2899E0B400A1EBB5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BD91D76528A27378005CA344 /* Bg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bg.swift; sourceTree = "<group>"; };
+		BD91D76728A2740A005CA344 /* PretSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PretSlider.swift; sourceTree = "<group>"; };
 		BDE8D79328A24D1800192BEB /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +64,8 @@
 		BD00EE4728992081004F3769 /* your-pret */ = {
 			isa = PBXGroup;
 			children = (
+				BD91D76728A2740A005CA344 /* PretSlider.swift */,
+				BD91D76528A27378005CA344 /* Bg.swift */,
 				BDE8D79328A24D1800192BEB /* ColorExtension.swift */,
 				BD6D87FB2899DFFC00A1EBB5 /* your-pret.entitlements */,
 				BD00EE4828992081004F3769 /* your_pretApp.swift */,
@@ -158,8 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD00EE4B28992081004F3769 /* ContentView.swift in Sources */,
+				BD91D76828A2740A005CA344 /* PretSlider.swift in Sources */,
 				BDE8D79428A24D1800192BEB /* ColorExtension.swift in Sources */,
 				BD6D88002899E0B400A1EBB5 /* ViewModel.swift in Sources */,
+				BD91D76628A27378005CA344 /* Bg.swift in Sources */,
 				BD00EE4928992081004F3769 /* your_pretApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

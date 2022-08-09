@@ -21,13 +21,13 @@ class ViewModel: ObservableObject {
         
         // TODO: if >30 minutes, return "READY"
         
-        return ""
+        return "24 minutes ago"
     }
     
     var timeRefresh: String {
         // TODO: return lastUpdate as string; "" if >30 minutes
         
-        return ""
+        return "10:24am"
     }
     
     init() {
