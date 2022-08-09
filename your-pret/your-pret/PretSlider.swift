@@ -27,14 +27,14 @@ struct PretSlider: View {
     }
     
     var timeAgoText: some View {
-        Text("\(vm.timeSince)")
+        Text(vm.lastUpdate, style: .relative)
             .font(.title)
             .fontWeight(.bold)
             .foregroundColor(vm.status == .p1 ? Color.white : Color.pretRed)
     }
     
     var timeSpecificText: some View {
-        Text("10:35am")
+        Text(vm.lastUpdate, style: .time)
             .font(.title2)
             .italic()
             .foregroundColor(vm.status == .p1 ? Color.white : Color.pretRed)

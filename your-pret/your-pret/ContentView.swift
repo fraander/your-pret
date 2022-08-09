@@ -14,7 +14,6 @@ struct ContentView: View {
     // TODO: things ...
     /**
      * 1. hook up to cloudkit model
-     * 2. time updating and toggle working
      * 3. remove geometry reader
      */
     
