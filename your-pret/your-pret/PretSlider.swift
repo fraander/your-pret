@@ -44,6 +44,8 @@ struct PretSlider: View {
         Group {
             if Date().timeIntervalSince(vm.lastUpdate) > 30 * 60 {
                 return Text("It's Pret time!")
+                    .font(.system(size: 24, weight: .bold, design: .monospaced))
+                    .foregroundColor(vm.status == .p1 ? Color.secondary : Color.white.opacity(0.8))
             } else {
                 return Text("Not yet ready.")
             }
